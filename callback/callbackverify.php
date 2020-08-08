@@ -22,7 +22,7 @@ $sEchoStr = "";
 // call verify function
 $errCode = $wxcpt->VerifyURL($sVerifyMsgSig, $sVerifyTimeStamp, $sVerifyNonce, $sVerifyEchoStr, $sEchoStr);
 if ($errCode == 0) {
-	echo $sEchoStr . "\n";
+	echo $sEchoStr;
 } else {
 	print("ERR: " . $errCode . "\n\n");
 }
